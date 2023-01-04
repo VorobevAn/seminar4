@@ -66,22 +66,21 @@ def addition(first, second):
 first = polican(-100, 100)
 with open('first.txt', 'w') as fail:
     fail.write(recording_polynomial(first))
-    
-
+ 
 second = polican(-100, 100)
-with open('second.txt','w') as fail_2:
+with open('second.txt', 'w') as fail_2:
     fail_2.write(recording_polynomial(second))
-
-result = addition(first, second)
-
-with open('result.txt', 'w') as res:
-    res.write(recording_polynomial(result))
-    
 
 with open('first.txt', 'r') as fail:
     print(fail.read())
 with open('second.txt', 'r') as fail_2:
-    print(fail_2.read())
+    print(fail_2.read()) 
+    
+    
+result = addition(first, second)
+
+with open('result.txt', 'w') as res:
+    res.write(recording_polynomial(result))
 with open('result.txt', 'r') as res:
     print(res.read())
 
